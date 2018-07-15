@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>乗算レイヤ逆算ツール</title>
+    </head>
+    <body>
+        <p>乗算後のRGBと、乗算前のいずれかのレイヤのRGBから、乗算前のもう一方のレイヤのRGBを逆算します</p>
+        <form action="/color" method="post">
+            <div>
+                <label>乗算前の色(16ビットカラー)<label></br>
+                    #<input type="text" name="color0" pattern="^[0-9A-Fa-f]+$" required placeholder="RRGGBB" minlength="6" maxlength="6">
+            </div>
+            <div>
+                <label>乗算後の色(16ビットカラー)<label></br>
+                    #<input type="text" name="color1" pattern="^[0-9A-Fa-f]+$" required placeholder="RRGGBB" minlength="6" maxlength="6">
+            </div>
+            <div>
+                <button>乗算前の色を計算</buton>
+            </div>
+        </form>
+    </body>
+</html>
