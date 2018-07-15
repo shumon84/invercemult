@@ -25,6 +25,8 @@ func stripColor(r *http.Request, valueName string) [4]int64 {
 
 // /colorにきたリクエストを捌くハンドラ
 func color(w http.ResponseWriter, r *http.Request) {
+	fmt.Println(r)
+
 	if r.Method != "POST" {
 		post(w, r)
 		return
