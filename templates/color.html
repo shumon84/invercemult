@@ -5,23 +5,35 @@
         <title>乗算レイヤ逆算ツール</title>
     </head>
     <body>
-        <div style="float:left;background-color:#{{.color0}};width:100px;padding:25px;">
-            <p>乗算前の色1</p>
-            <p style="font-family:menlo">#{{.color0}}</p>
-        </div>
-        <div style="float:left;padding:40px 20px;">
-            <p>×</p>
-        </div>
-        <div style="float:left;background-color:#{{.color1}};width:100px;padding:25px;">
-            <p>乗算前の色2</p>
-            <p style="font-family:menlo">#{{.color1}}</p>
-        </div>
-        <div style="float:left;padding:40px 20px;">
-            <p>=</p>
-        </div>
-        <div style="float:left;background-color:#{{.color2}};width:100px;padding:25px;">
-            <p>乗算後の色</p>
-            <p style="font-family:menlo">#{{.color2}}</p>
+        <div style="text-align:center;">
+            <div style="color:#ffffff;display:inline-block;min-width:551px">
+                <div style="background-color:#777777;">
+                    <p style="font-size:30px;">乗算レイヤ逆算結果</p>
+                </div>
+                <div style="float:left;background-color:#{{.color0}};width:100px;padding:25px;">
+                    <p>乗算前の色1</p>
+                    <p style="font-family:menlo">#{{.color0}}</p>
+                </div>
+                <div style="float:left;padding:40px 20px;">
+                    <p style="color:#000000">×</p>
+                </div>
+                <div style="float:left;background-color:#{{.color1}};width:100px;padding:25px;">
+                    <p>乗算前の色2</p>
+                    <p style="font-family:menlo">#{{.color1}}</p>
+                </div>
+                <div style="float:left;padding:40px 20px;">
+                    <p style="color:#000000">=</p>
+                </div>
+                <div style="float:left;background-color:#{{.color2}};width:100px;padding:25px;">
+                    <p>乗算後の色</p>
+                    <p style="font-family:menlo">#{{.color2}}</p>
+                </div>
+                <p style="margin-top:200px;">
+                    <a href="/post">
+                        <button>もう一度計算する</button>
+                    </a>
+                </p>
+            </div>
         </div>
     </body>
 </html>
