@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"log"
 	"net/http"
 )
 
@@ -26,5 +27,8 @@ func main() {
 	http.HandleFunc("/color", color)
 	http.HandleFunc("/post", post)
 	http.HandleFunc("/", post)
-	server.ListenAndServe()
+
+	if err := server.ListenAndServe(); err != nil {
+		log.Fatal(err)
+	}
 }
